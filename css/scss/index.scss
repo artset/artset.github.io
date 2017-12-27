@@ -71,16 +71,6 @@ h3 {
     width:100%;
 }
 
-#marble {
-    width:650px;
-    height:200px;
-    background-color: #fff;
-    background-image: url("https://ih1.redbubble.net/image.238694460.3355/flat,1000x1000,075,f.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    clip: rect(0px,60px,200px,0px);
-}
 a {
     text-decoration: none;
     &:hover {
@@ -89,12 +79,14 @@ a {
 }
 
 .title {
-    font-family: 'Shrikhand', cursive;
+    font-family: "suburban",sans-serif;
     font-size:90px;
     
 }
 
 #header { 
+    font-family: "suburban",sans-serif;
+    font-size:90px
     background-color: rgba(0, 0, 0, 0.4);
     background: rgba(0, 0, 0, 0.4);
     color:#fff;
