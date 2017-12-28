@@ -209,7 +209,7 @@ a {
 
   h3 {
     font-size: 50px;
-    margin: 0px; }
+    margin: 0px 0px 20px 0px; }
 
   #header {
     margin-top: 55%;
@@ -280,10 +280,11 @@ a {
     width: 600px; }
 
   .capt {
-    width: 600px;
+    width: 570px;
     height: 250px;
     margin-top: -270px;
-    padding: 10px; }
+    padding: 20px;
+    line-height: 50px; }
 
   .entry:hover .capt {
     margin-top: 0px; } }
