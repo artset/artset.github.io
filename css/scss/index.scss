@@ -106,8 +106,9 @@ a:hover {
     margin:0 auto;
 }
 #name-blck {
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
+    left:0px;
     margin-top: 15%; 
     float: center;
     z-index:1;
@@ -126,6 +127,7 @@ a:hover {
     background: rgba(220, 220, 255, 0.4);
     background-color: rgba(220, 220, 255, 0.4);
     color:$dark;
+    margin-left:-40px;
 }
 
 .shape {
@@ -211,6 +213,7 @@ a:hover {
     float:center;
     text-align:justify;
     line-height:25px;
+    font-weight:400;
     
     a{
         color:#bebee8;
@@ -252,4 +255,66 @@ a:hover {
 
 #media:hover {
     opacity:1;
+}
+
+@media only screen and (max-device-width: 480px) {
+
+    .title {
+        font-size:180px
+    }
+    
+    #header {
+        height:150px;
+    }
+
+    #nav {
+        font-size:50px
+    }
+
+    #name-blck {
+        margin-top:50%;
+    }
+    
+    #section {
+        height:auto;
+    
+    }
+    #about-blck {
+        font-size:50px;
+        width:80%;
+        line-height:60px;
+    }
+
+    h2 {
+        font-size:90px;
+    }
+
+
+    .entry {
+        margin-left:150px;
+        float:center;
+        width:600px;
+        height:600px;
+        font-size:30px;
+    }
+
+    .entry img {
+        width:600px;
+        min-height:600px;
+        
+    }
+
+    .capt {
+        width:570px;
+        height: 250px;
+        margin-top:-270px;
+        padding:20px;
+        line-height:50px;
+    }
+
+    .entry:hover .capt {
+        margin-top:0px;
+    }
+
+
 }
