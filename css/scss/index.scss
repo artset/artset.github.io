@@ -112,7 +112,6 @@ a:hover {
     margin-top: 15%; 
     float: center;
     z-index:1;
-    width:100%;
     padding:40px;
     position:relative;
     background: rgba(238, 238, 255, 0.2);
@@ -127,7 +126,6 @@ a:hover {
     background: rgba(220, 220, 255, 0.4);
     background-color: rgba(220, 220, 255, 0.4);
     color:$dark;
-    margin-left:-40px;
 }
 
 .shape {
