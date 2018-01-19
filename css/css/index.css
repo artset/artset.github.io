@@ -43,7 +43,8 @@ a:hover {
   width: 100%; }
   #header img {
     width: 150px;
-    margin-top: 15px; }
+    margin-top: 15px;
+    margin-left: 10px; }
 
 #nav {
   margin-top: -40px;
@@ -175,8 +176,11 @@ a:hover {
 
 #port-blck {
   min-height: 100vh;
+  height: auto;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  margin: 0 auto;
+  float: center; }
 
 .section #footer-blck {
   max-height: 30vh;
@@ -201,14 +205,25 @@ a:hover {
   opacity: 1; }
 
 @media only screen and (max-device-width: 480px) {
+  body {
+    overflow-x: hidden; }
+
   .title {
     font-size: 180px; }
 
   #header {
-    height: 150px; }
+    height: auto; }
+    #header img {
+      display: none; }
 
   #nav {
-    font-size: 50px; }
+    font-size: 50px;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px; }
+    #nav a {
+      padding: 20px;
+      display: inline-block; }
 
   #name-blck {
     margin-top: 50%; }
@@ -225,7 +240,7 @@ a:hover {
     font-size: 90px; }
 
   .entry {
-    margin-left: 150px;
+    margin: 0 auto;
     float: center;
     width: 600px;
     height: 600px;
