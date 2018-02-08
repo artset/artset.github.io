@@ -85,7 +85,8 @@ a:hover {
   padding: 40px;
   position: relative;
   background: rgba(238, 238, 255, 0.2);
-  background-color: rgba(238, 238, 255, 0.2); }
+  background-color: rgba(238, 238, 255, 0.2);
+  margin-left: 40px; }
 
 .title {
   font-family: "suburban",sans-serif;
@@ -132,8 +133,8 @@ a:hover {
 .entry {
   float: left;
   margin: 10px;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   overflow: hidden;
   -webkit-transition: .5s;
   transition: .5s;
@@ -144,17 +145,17 @@ a:hover {
   z-index: 1; }
 
 .entry img {
-  width: 250px;
+  width: 300px;
   -webkit-transition: .5s;
   transition: .5s; }
 
 .capt {
   padding: 5px;
   background: #dadaf7;
-  width: 240px;
-  height: 130px;
+  width: 290px;
+  height: 150px;
   position: relative;
-  margin-top: -140px;
+  margin-top: -160px;
   -webkit-transition: .5s;
   transition: .5s; }
 
@@ -179,8 +180,7 @@ a:hover {
   height: auto;
   position: relative;
   z-index: 1;
-  margin: 0 auto;
-  float: center; }
+  padding-bottom: 40px; }
 
 .section #footer-blck {
   max-height: 30vh;
