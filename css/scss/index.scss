@@ -69,7 +69,7 @@ a:hover {
 }
 
 #nav {
-    margin-top:-40px;
+    margin-top:-50px;
     position:absolute;
     margin-left:180px;
     
@@ -110,7 +110,7 @@ a:hover {
 #name-blck {
     margin: 0 auto;
     text-align: center;
-    left:0px;
+    left:-50px;
     margin-top: 15%; 
     float: center;
     z-index:1;
@@ -232,13 +232,13 @@ a:hover {
     height:auto;
     position:relative;
     z-index:1;
-    padding-bottom:40px;
+    margin-left:70px;
 
     @extend %inner-content;
 }
 
 .section #footer-blck {
-    max-height: 30vh;
+    max-height: 40vh;
     position:relative;
     z-index:1;
     @extend %inner-content;
