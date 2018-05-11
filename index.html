@@ -1,247 +1,167 @@
-<DOCTYPE HTML>
-    <html>
-       <!-- Katherine Sang 2018 -->
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-       <script>
-          $(document).ready(function() {
-              $("#about").click(function() {
-                  $('html, body').animate({
-                      scrollTop: $("#about-blck").offset().top
-                  }, 1000);
-              });
-          
-              $("#home").click(function() {
-                  $('html, body').animate({
-                      scrollTop:0
-                  }, 1000);
-              });
-          
-              $("#port").click(function() {
-                  $('html, body').animate({
-                      scrollTop: $("#port-blck").offset().top
-                  }, 1000);
-              });
-          
-              $("#further").click(function() {
-                  $('html, body').animate({
-                      scrollTop: $("#footer-blck").offset().top
-                  }, 1000);
-              });
-          });
-          
-       </script>
-       <script> 
-          $(document).ready(function(){
-              var animatel1 = function () {
-                  $(".shape").animate({
-                      opacity:0,
-                  }, 1);
-          
-                  $("#header").fadeIn();
-              };
-          
-              var animate2 = function () {
-                  $(".shape").delay(5).animate({
-                      opacity:1,
-                  }, 10);
-          
-                  $("#header").fadeOut();
-              };
-            
-              $(window).scroll(function() {
-                   if ($(this).scrollTop() > $(".section").height()/4) {
-                      animatel1();
-                  } else if ($(this).scrollTop() < $(".section").height()) {
-                      animate2();
-                  }
-          
-              
-              });
-          });
-       </script>
-       <head>
-          <title> Katherine Sang </title>
-          <link rel="stylesheet" type="text/css" href="css/css/index.css">
-          <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700" rel="stylesheet">
-          <link rel="stylesheet" href="https://use.typekit.net/ymg1cyn.css">
-          <script src="script.js" type="text/javascript"></script>
-       </head>
-       <body>
-          <div id = "header">
-             <img src="sig.png">
-             <div id ="nav">
-                <a href="#" id ="home">home</button>
-                <a href ="#" id ="about">about</button>
-                <a href ="#" id ="port">portfolio</a> 
-                <a href ="#" id ="further">further</a>
-             </div>
+<!DOCTYPE html>
+  <html>
+
+    <head>
+      <title> Katherine Sang </title>
+
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="css/index.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript" src="index.js" async></script>
+
+
+
+    </head>
+
+    <body>
+
+    <div id = "container">
+
+    <div id ="about">
+        <div class="curate">curate</div>
+        <div id ="cclose">
+          <a href="#">close</a>
+        </div>
+
+        <br>
+
+      Hello, I'm Katherine! I'm fascinated by the links between the art of creating and curating -- which I explore
+      through illustration, writing, and coding. Currently, I am trying to master the art of sprezzatura,
+      reading a handful of books, and learning French. You will most likely catch me camping out in some library
+       or on the green line train, probably going anywhere and everywhere. I collect color palettes  (#7EBDC2, #FFE5BF, $FF77272),
+       words(rigmarole, stochastic, mulch), and good music in peculiar key signatures
+        (<a href="https://www.youtube.com/watch?v=MmZexg8sxyk">6/4</a>, 
+        <a href="https://www.youtube.com/watch?v=iDDS2TwT8yc">5/8 + 7/8</a>,
+        <a href="https://www.youtube.com/watch?v=KtlgYxa6BMU">6/8 + 9/8</a> ).
+       Outside of that, I am a fan of fine pens, magical surrealism, and that moment when the words "all test passed"
+       appear on my screen.
+        <br>
+
+
+
+<div class="media">
+  <a href="https://www.linkedin.com/in/katherine-sang-073a66155/">linkedin</a>
+  <a href="https://www.instagram.com/blobgal">instagram</a>
+  <a href="https://github.com/artset">github</a>
+</div>
+
+<div class="further">
+  This website was made with love in 2018, set in Tajawal, and hosted on Github. <br />
+  See an older version of my webpage <a href="purple.html">here</a>.
+</div>
+
+
+</div>
+    <div id="portfolio">
+      <div id="miniheader">
+      <div class="create">create</div>
+      <div id ="pclose">
+        <a href="#">close</a>
+      </div>
+    </div>
+
+
+      <div class="entry">
+        <div class="dot"></div>
+          <img src="images\cover.png">
+        <div class="caption">
+          <div class="capt_sub">oh-one</div>
+          Self made magazine composed of casual creations.
+          <a href ="https://issuu.com/katherinesang/docs/oh-one">read it here</a>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="dot"></div>
+          <img src="images\cont_dep_resize.jpg">
+        <div class="caption">
+          <div class="capt_sub">at sunset</div>
+          Part of a tryptic - first experimentations with digital.
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="dot"></div>
+          <img src="https://i.imgur.com/oHkSKEr.png">
+        <div class="caption">
+          <div class="capt_sub">study on the spot</div>
+          Help connect students in similar
+          academic crises. 
+          <a href ="https://www.figma.com/proto/JKeG20I5lH4ZSIORJ12BiEUV/SOS2?scaling=contain&node-id=2%3A61&redirected=1">Prototype</a>
+        </div>
+      </div>
+    
+
+      <div class="entry">
+        <div class="dot"></div>
+          <img src="images\world_resize.png">
+        <div class="caption">
+          <div class="capt_sub">world: sketchbook</div>
+          Sketchbook preview. Rest will be uploaded soon.
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="dot"></div>
+        <img src="https://i.imgur.com/NdrJnMq.png">
+        <div class="caption">
+          <div class="capt_sub">Connect 4</div>
+          Play connect 4 a twist: rotate the board, and AI. 
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="dot"></div>
+        <img src="https://i.imgur.com/HGuLCHq.jpg" />
+        <div class="caption">
+          <div class="capt_sub">Crest 2016-2017</div>
+          Cover art for Crest Literary Arts magazine.
+        </div>
+      </div>
+
+  
+      
+      <div class="entry">
+        <div class="dot"></div>
+        <img src="https://i.imgur.com/G0pp8WM.png">
+        <div class="caption">
+          <div class="capt_sub">2015 Sketchbook</div>
+          here's a small blurb
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="dot"></div>
+        <img src="https://i.imgur.com/irJB7FM.png">
+        <div class="caption">
+            <div class="capt_sub">Furniture</div>
+            here's a small blurb
           </div>
-          <div id = "container">
-             <div class = "section">
-                <div id ="name-blck">
-                   <div class ="title"> katherine sang</div>
-                </div>
-                <div id= "scrib1" class = "shape">
-                   <svg  height="200" width="200">
-                      <path d=" M 25,100
-                         C 25,150 75,150 75,100 
-                         S 100,25 150,75    "  stroke="#639FED" stroke-width="30" fill="none"/>
-                   </svg>
-                </div>
-                <div id = "cir1" class = "shape">
-                   <svg width="200" height="200">
-                      <circle cx="100" cy="100" r="100" fill="#635DAF" />
-                   </svg>
-                </div>
-                <div id ="scrib2" class = "shape">
-                   <svg  height="200" width="200">
-                      <path d=" M 25,100
-                         C 25,150 75,150 75,100 
-                         S 100,25 150,75    "  
-                         stroke="#b55389" stroke-width="30" fill="none"
-                         transform="translate(40) rotate(45 50 50)"/>
-                   </svg>
-                </div>
-                <div id = "tri1" class = "shape">
-                   <svg height="210" width="500">
-                      <polygon points="180,10 60,190 300,210" style="fill: #635DAF" />
-                   </svg>
-                </div>
-                <div id = "cir2" class = "shape">
-                   <svg width="240" height="240" margin-left:-200px;>
-                      <circle cx="60" cy="60" r="60" fill="#b55389" />
-                   </svg>
-                </div>
-                <div id = "tri2" class = "shape">
-                   <svg height="200" width="200" class ="triangle" margin-left:0px;>
-                      <polygon points="0,0 200,0 50,200" style="fill: #639FED" />
-                   </svg>
-                </div>
-             </div>
+      </div>
 
 
-             <div class = "section">
-                <div id ="about-blck">
-                   <h2>about</h2>
-                   Hello (World)!* I'm Katherine. Chicago based scribbler and maker.
-                   I write prose, poetry, and code (yes, good combination).
-                   I am a huge fan of <a>thoughtful design</a>, satire, typography,
-                   chamber music, barren midwestern winters, and stark city skylines. I want to
-                   <a> build things</a>  that will change how people think.
-                   <BR>
-                   <BR>
-                   <BR>
-                   <i>"Whether you take the doughnut hole as a blank space or as an entity 
-                   unto itself is a purely metaphysical question and does not affect the 
-                   taste of the doughnut one bit."
-                   </i> <br>— Haruki Murakami
-                   <BR><BR><BR>
-                   <small>*bad joke</small>
-                </div>
-             </div>
+    </div>
+    <div id ="sidebar">
 
 
-             <div class= "section">
-                <div id ="port-blck">
-                   <h2>PORTFOLIO</h2>
-                   <div class ="entry">
-                      <div class="capt">
-                         <h3>Study on the Spot</h3>
-                         App prototype: help connect students in similar
-                         academic crises. <a href ="https://www.figma.com/proto/JKeG20I5lH4ZSIORJ12BiEUV/SOS2?scaling=contain&node-id=2%3A61&redirected=1">View the prototype here.</a>
-                      </div>
-                      <img src="https://i.imgur.com/oHkSKEr.png"  height="300px"  />
-                   </div>
-
-                   <div class ="entry">
-                    <div class="capt">
-                       <h3>Watercolor Sketchbook - 2018</h3>
-                       Glimpse into my year long watercolor sketchbook. 50% of the material was created during winter break 2017.
-                       <a href ="https://drive.google.com/drive/folders/1frTQkfLLxCx_sHWysExNz5Ju-7Kw3kNK?usp=sharing">View the rest here.</a>
-                    </div>
-                    <img src="https://i.imgur.com/ScYOxdt.jpg" />
-                 </div>
-
-                   
-                   <div class ="entry">
-                      <div class="capt">
-                         <h3>Inktober 2017</h3>
-                         Challenge to ink daily for October. 
-                         <a href ="https://drive.google.com/drive/folders/1Tk0i6j8WNpZQTJencfo7suWDphRZcb8K?usp=sharing">View the rest here.</a>
-                      </div>
-                      <img src="https://i.imgur.com/Grdcu2X.jpg" />
-                   </div>
-
-                   <div class="entry">
-                      <div class = "capt">
-                         <h3>Crest 2016-17</h3>
-                         Cover Designer for the 124th annual edition of Crest literary arts magazine.
-                      </div>
-                      <img src="https://i.imgur.com/HGuLCHq.jpg" />
-                   </div>
-
-                   <div class="entry">
-                      <div class="capt">
-                         <h3>Connect4 With Rotation</h3>
-                         Classic 2 player game with a twist -- rotate the board to shift the pieces.
-                         Half baked AI.
-                      </div>
-                      <img src="https://i.imgur.com/NdrJnMq.png">
-                   </div>
-
-                   <div class="entry">
-                      <div class="capt">
-                         <h3>Remake: Hex Color Clock</h3>
-                         Simple remake of the hex color clock - my
-                         first experiment with Javascript. View it 
-                         <a href ="https://artset.github.io/hexclock/">here</a>.
-                      </div>
-                      <img src=" https://i.imgur.com/hJLUjWm.png
-                         ">
-                   </div>
-
-                   <div class="entry">
-                      <div class="capt">
-                         <h3>2016-2017 Sketchbook</h3>
-                         Images w/ link to be uploaded soon.
-                      </div>
-                      <img src="https://i.imgur.com/irJB7FM.png">
-                   </div>
-
-                   <div class="entry">
-                      <div class="capt">
-                         <h3>2016-2017 Works</h3>
-                         From my second & last high school art class! To be uploaded soon.
-                      </div>
-                      <img src="https://i.imgur.com/G29TIeD.png">
-                   </div>
-
-                   <div class="entry">
-                      <div class="capt">
-                         <h3>2015-2016 Sketches</h3>
-                         Images w/ link to be uploaded soon.
-                      </div>
-                      <img src="https://i.imgur.com/G0pp8WM.png">
-                   </div>
-                </div>
-             </div>
-
-
-             <div class = "section">
-                <div id ="footer-blck">
-                   <h2>Katherine Sang, 2018</h2>
-                   <div id ="media"> 
-                      <a href ="https://instagram.com/blobgal">
-                      <img src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Instagram-128.png">
-                      </a>
-                      <a href ="https://github.com/artset">
-                      <img src="https://cdn4.iconfinder.com/data/icons/miu-square-flat-social/60/github-square-social-media-128.png">
-                      </a>
-                      <a href ="https://www.linkedin.com/in/katherine-sang-073a66155/">
-                      <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-linkedin-128.png">
-                      </a>
-                   </div>
-                </div>
-             </div>
+        <div class= "icon">
+            <div class="amp">
+                <img src="images\ks.png">
+            </div>
+            <div class="girl">
+            <img src="images\iconwhite.png">
           </div>
-       </body>
+        </div>
+
+        <div class="name"><b>katherine</b> sang</div>
+        <a id="portfolio_link" href="#">create </a> 'n <a id="about_link" href="#">curate</a>
+    </div>
+
+
+    </div>
+    </div>
+    </body>
+
+
+  </html>
