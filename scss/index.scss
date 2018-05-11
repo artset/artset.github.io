@@ -185,7 +185,7 @@ b {
     border-left:1px solid #eee;
     height:100%; 
     opacity:0;
-    display:none;
+    @include transition(.4s);
 }
 
 .further {

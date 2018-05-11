@@ -16,7 +16,6 @@ function showAbout() {
         aboutDiv.style.opacity = 1;
         sideDiv.style.marginLeft = "-350px";
         sideDiv.style.opacity = .4;
-        aboutDiv.style.display = "block";
     } else {
         aboutDiv.style.opacity = 0;
         sideDiv.style.marginLeft = "-170px";
