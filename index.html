@@ -4,147 +4,151 @@
     <head>
       <title> Katherine Sang </title>
 
-
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <link rel="stylesheet" type="text/css" href="css/index.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+      <script>
+         $(document).ready(function() {
+             $("#portfolio_link").click(function() {
+                 $('html, body').animate({
+                     scrollTop: $(".portfolio").offset().top
+                 }, 1000);
+             });
+          });
+      </script>
+
       <script type="text/javascript" src="index.js" async></script>
-      <link rel="shortcut icon" href="images/fav.ico" type="image/x-icon" />
-
-
+      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
     </head>
 
     <body>
 
-    <div id = "container">
-
-    <div id ="about">
-        <div class="curate">curate</div>
-        <div id ="cclose">
-          <a href="#">close</a>
-        </div>
-
-        <br>
-
-      Hello, I'm Katherine! I'm fascinated by the connections between the art of creating and curating -- which I explore
-      through illustration, writing, and tech development.
-       Currently, I am trying to master the art of sprezzatura,
-      reading a handful of books, and learning French. You will most likely catch me camping out in some library
-       or on the L, probably going anywhere and everywhere. I collect color palettes  (#7EBDC2, #FFE5BF, $FF7272),
-       words(rigmarole, stochastic, mulch), and good music in peculiar key signatures
-        (<a href="https://www.youtube.com/watch?v=MmZexg8sxyk">6/4</a>, 
-        <a href="https://www.youtube.com/watch?v=iDDS2TwT8yc">6/8 + 5/8 + 7/8 </a>,
-        <a href="https://www.youtube.com/watch?v=KtlgYxa6BMU">6/8 + 6/8 + 9/8</a> ).
-       Outside of that, I am a fan of evening runs, magical surrealism, and that moment when the words "all tests passed"
-       appear on my screen.
-        <br>
-
-
-
-<div class="media">
-  <a href="https://www.linkedin.com/in/katherine-sang-073a66155/">linkedin</a>
-  <a href="https://www.instagram.com/blobgal">instagram</a>
-  <a href="https://github.com/artset">github</a>
-  <a href="mailto:katherine_sang@brown.edu" target="_top">email</a>
-</div>
-
-<div class="further">
-  This website was made with love in 2018, set in Tajawal, and hosted on Github. <br />
-  See an older version of my webpage <a href="purple.html">here</a>.
-</div>
-
-
-</div>
-    <div id="portfolio">
-      <div id="miniheader">
-      <div class="create">create</div>
-      <div id ="pclose">
-        <a href="#">close</a>
+    <div id="curate">
+      <div class="sideicon">
+            <span style="font-size:30px;cursor:pointer" onclick="closeCurate()">
+              <div class="closeoverlay"><i>x</i></div></span>
+           <img src="images\smalliconwhite.png">
       </div>
+      <h2> curate </h2>
+
+     <Br><Br>
+
+       <div class="abtxt">
+         Hi there! I'm a sophomore at Brown University,
+         interested in computer science, education, and visual story telling. Over the
+         summer, I've done web development at WBRU, helped prototype and
+         create graphics for an app, and learned how to make the best thai rolled ice cream.
+
+         <Br> <br>
+
+        Outside of tech and the arts, I love learning languages and the connections between
+        literature and translation.  At Brown, I design and illustrate for the Indy + BCSC
+        and am on WBRU's tech team.
+        <Br> <Br>
+
+        Beyond my <a href="http://instagram.com/blobgal">digital adventures</a> and
+        <a href="https://github.com/artset">humble code</a>, find me on
+        <a href="https://www.linkedin.com/in/katherine-sang-073a66155/">LinkedIn</a>.
+
+        <Br> <br>
+        <small> This website is built w/ love, set in Tajawal, and hosted on Github. </small>
+     </div>
+
     </div>
 
-
-      <div class="entry">
-        <div class="dot"></div>
-          <img src="images\cover.png">
-        <div class="caption">
-          <div class="capt_sub">oh-one</div>
-          Self made magazine composed of casual creations.
-          <a href ="https://issuu.com/katherinesang/docs/oh-one">read it here</a>
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="dot"></div>
-          <img src="images\cont_dep_resize.jpg">
-        <div class="caption">
-          <div class="capt_sub">at sunset</div>
-          Part of a tryptic - first experimentations with digital.
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="dot"></div>
-          <img src="https://i.imgur.com/oHkSKEr.png">
-        <div class="caption">
-          <div class="capt_sub">study on the spot</div>
-          Help connect students in similar
-          academic crises. 
-          <a href ="https://www.figma.com/proto/JKeG20I5lH4ZSIORJ12BiEUV/SOS2?scaling=contain&node-id=2%3A61&redirected=1">Prototype</a>
-        </div>
-      </div>
-    
-
-      <div class="entry">
-        <div class="dot"></div>
-          <img src="images\world_resize.png">
-        <div class="caption">
-          <div class="capt_sub">world: sketchbook</div>
-          Sketchbook preview. Rest will be uploaded soon.
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="dot"></div>
-        <img src="https://i.imgur.com/NdrJnMq.png">
-        <div class="caption">
-          <div class="capt_sub">Connect 4</div>
-          Play connect 4 a twist: rotate the board, and AI. 
-        </div>
-      </div>
-
-      <div class="entry">
-        <div class="dot"></div>
-        <img src="https://i.imgur.com/HGuLCHq.jpg" />
-        <div class="caption">
-          <div class="capt_sub">Crest 2016-2017</div>
-          Cover art for Crest Literary Arts magazine.
-        </div>
-      </div>
-
-
-
-    </div>
-    <div id ="sidebar">
-
-
-        <div class= "icon">
-            <div class="amp">
+    <div id="content">
+      <div class="section">
+        <div id ="header">
+            <div class= "icon">
+              <div class="amp">
                 <img src="images\ks.png">
+              </div>
+              <div class="girl">
+                <img src="images\iconwhite.png">
+              </div>
             </div>
-            <div class="girl">
-            <img src="images\iconwhite.png">
+
+            <div class="name"><b>katherine</b> sang</div>
+            <a id="portfolio_link" href="#">create </a> 'n <a href="#"><span "cursor:pointer" onclick="openCurate()">curate</span></a>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="portfolio">
+
+          <div id="create">
+            <div class="sideicon">
+              <span style="font-size:30px;cursor:pointer" onclick="openCurate()"><div class="overlay"><i>i</i></div></span>
+             <img src="images\smalliconwhite.png"></div>
+             create  </div>
+
+          <div id="container">
+
+            <div class="entry">
+              <img src="images\gaggle\gaggle.png">
+              <div class="caption">
+                <div class="capt_sub">gaggle</div>
+                UI/UX design and graphics for a delivery/order app.
+                <a href="https://xd.adobe.com/view/c71ee5d3-8013-42da-4cda-e25f1efef31f-b12f/">prototype</a>
+                <a href ="gaggle.html">learn more</a>
+              </div>
+            </div>
+
+
+            <div class="entry">
+              <img src="images\cover.png">
+              <div class="caption">
+                <div class="capt_sub">oh-one</div>
+                Self made magazine composed of creations from freshman year.
+                <a href ="https://issuu.com/katherinesang/docs/oh-one">read it here</a>
+              </div>
+            </div>
+
+            <div class="entry">
+              <img src="images\final2.png">
+              <div class="caption">
+                <div class="capt_sub">digital art</div>
+                My ventures into photoshop.
+                <a href="digitalart.html">see the rest</a>
+              </div>
+            </div>
+
+            <div class="entry">
+              <img src="images\illustration\treehouse.jpg">
+              <div class="caption">
+                <div class="capt_sub">fine arts</div>
+                Scribbles, sketches, done in ink and watercolor.
+                <a href="fineart.html">see more fine art</a>
+              </div>
+            </div>
+
+            <div class="entry">
+              <img src="https://i.imgur.com/oHkSKEr.png">
+              <div class="caption">
+                <div class="capt_sub">SOS</div>
+                An app prototyped to help connect students in a crisis.
+                <a href ="https://www.figma.com/proto/JKeG20I5lH4ZSIORJ12BiEUV/SOS2?scaling=contain&node-id=2%3A61&redirected=1">Prototype</a>
+              </div>
+            </div>
+
+            <div class="entry">
+              <img src="https://i.imgur.com/NdrJnMq.png">
+              <div class="caption">
+                <div class="capt_sub">connect 4</div>
+                Created rotational connect 4 with minimax AI and multi player
+                in java.
+              </div>
+            </div>
+
+
           </div>
         </div>
-
-        <div class="name"><b>katherine</b> sang</div>
-        <a id="portfolio_link" href="#">create </a> 'n <a id="about_link" href="#">curate</a>
+      </div>
     </div>
 
 
-    </div>
-    </div>
     </body>
 
 
