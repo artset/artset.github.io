@@ -1,0 +1,80 @@
+@import url("https://use.typekit.net/ymg1cyn.css");
+@import './entry.css';
+
+body {
+  font-family: 'Acumin Pro', san-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+h2 {
+  font-weight: 400;
+  font-family: 'Warnock Pro', serif;
+  font-size: 80px;
+  width: 365px;
+}
+
+.header {
+  width: 100%;
+  padding: 100px;
+  display: flex;
+  font-family: 'Acumin Pro Wide', san-serif;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 30px;
+}
+
+.header:after {
+  width:100%;
+  background: #f9e369;
+  height: 10px;
+  margin-left: -200px;
+  content: "";
+  display: block;
+  margin-top: 90px;
+  position: absolute;
+}
+
+.content {
+  width: 100%;
+  padding: 40px 100px 100px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.sidebar {
+  width: 310px; 
+  font-size: 18px;
+  height: 100%;
+  background: fixed;
+  position: absolute;
+  text-align: right;
+  font-family: 'acumin pro', sans-serif;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  font-family: 'Acumin Pro Wide', sans-serif;
+}
+
+.entries {
+  width: 60%;
+  margin-left: 350px;
+  margin-top: -30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+

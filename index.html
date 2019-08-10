@@ -5,26 +5,10 @@
       <title> Katherine Sang </title>
 
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <link rel="stylesheet" type="text/css" href="css/index.css">
+      <link rel="stylesheet" type="text/css" href="styles/layout.css">
+      <link rel="stylesheet" type="text/css" href="styles/entry.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-      <script>
-        $(document).ready(function(){
-          $('body').css('display', 'none');
-          $('body').fadeIn(800);
-        });
-      </script>
-
-
-      <script>
-         $(document).ready(function() {
-             $("#portfolio_link").click(function() {
-                 $('html, body').animate({
-                     scrollTop: $(".portfolio").offset().top
-                 }, 1000);
-             });
-          });
-      </script>
 
       <script type="text/javascript" src="index.js" async></script>
       <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
@@ -32,129 +16,49 @@
     </head>
 
     <body>
-
-    <div id="curate">
-      <div class="sideicon">
-            <span style="font-size:30px;cursor:pointer" onclick="closeCurate()">
-              <div class="closeoverlay"><i>x</i></div></span>
-           <img src="images\smalliconwhite.png">
+      <div class="header">
+        <h2>my work.</h2>
+        <a href="/about"> about</a>
       </div>
-      <h2> curate </h2>
 
-     <Br><Br>
-
-       <div class="abtxt">
-         Hi there! I'm a computer science undergrad at Brown University, where I'm
-         excited about every facet of creation. Currently, I'm interested
-         in the translation of cool things into other cool things (still
-         working on turning that into practice), storytelling, and physical
-         fabrication.
-         <Br> <br>
-
-        At Brown, I work as a TA for a class about discrete math and probability,
-        graphic designer for the Brown Center for Students of Color,
-        create layouts for the College Independent, and am involved in STEAM
-        and Hack@Brown! When I'm not ranting about
-        a short story I just read, you can typically find me laser cutting
-        in the BDW, sketching, or taking an absurdly long walk.
-
-
-        <Br> <Br>
-
-        Beyond my <a href="http://instagram.com/blobgal">digital adventures</a> and
-        <a href="https://github.com/artset">humble code</a>, find me on
-        <a href="https://www.linkedin.com/in/katherine-sang-073a66155/">LinkedIn</a>,
-        <a href="https://www.behance.net/ksanguine">Behance</a>,
-        and <a href="https://medium.com/@artset">Medium</a>.
-
-        <Br> <br>
-        <small> This website is built w/ love, set in Tajawal, and hosted on Github. </small>
-     </div>
-
-    </div>
-
-    <div id="content">
-      <div class="section">
-        <div id ="header">
-            <div class= "icon">
-              <div class="amp">
-                <img src="images\ks.png">
-              </div>
-              <div class="girl">
-                <img src="images\iconwhite.png">
-              </div>
-            </div>
-
-            <div class="name"><b>katherine</b> sang</div>
-            <a id="portfolio_link" href="#">create </a> 'n <a href="#"><span "cursor:pointer" onclick="openCurate()">curate</span></a>
+      <div class="content">
+        <div class="sidebar">
+            <a href="#">code</a>
+            <a href="#">ui / ux</a>
+            <a href="#">illustration</a>
+            <a href="#">graphic design</a>
+            <a href="#">physical fabrication</a>
         </div>
-      </div>
 
-      <div class="section">
-        <div class="portfolio">
-
-          <div id="create">
-            <div class="sideicon">
-              <span style="font-size:30px;cursor:pointer" onclick="openCurate()"><div class="overlay"><i>i</i></div></span>
-             <img src="images\smalliconwhite.png"></div>
-             create  </div>
-
-          <div id="container">
-
-            <div class="entry">
-              <img src="images\gaggle\gaggle.png">
-              <div class="caption">
-                <div class="capt_sub">gaggle</div>
-                UI/UX design and graphics for a delivery/order app.
-                <a href="https://xd.adobe.com/view/c71ee5d3-8013-42da-4cda-e25f1efef31f-b12f/">prototype</a>
-                <a href ="gaggle.html">learn more</a>
-              </div>
-            </div>
-
-
-            <div class="entry">
-              <img src="images\cover.png">
-              <div class="caption">
-                <div class="capt_sub">oh-one</div>
-                Self made magazine composed of creations from freshman year.
-                <a href ="https://issuu.com/katherinesang/docs/oh-one">read it here</a>
-              </div>
-            </div>
-
-            <div class="entry">
-              <img src="images\final2.png">
-              <div class="caption">
-                <div class="capt_sub">illustration</div>
-                Capture moment with light and color <br>
-                <a href="art.html">see more illustrations</a>
-              </div>
-            </div>
-
-            <div class="entry">
-              <img src="images\gd\bcsc_screenprinting.png">
-              <div class="caption">
-                <div class="capt_sub">graphic design</div>
-                My obsession with typefaces, part iv. <br>
-                <a href="gd.html">see more posters</a>
-              </div>
-            </div>
-
-            <div class="entry">
-              <img src="https://i.imgur.com/oHkSKEr.png">
-              <div class="caption">
-                <div class="capt_sub">SOS</div>
-                An app prototyped to help connect students in a crisis.
-                <a href ="https://www.figma.com/proto/JKeG20I5lH4ZSIORJ12BiEUV/SOS2?scaling=contain&node-id=2%3A61&redirected=1">Prototype</a>
-              </div>
-            </div>
-
-
+        <div class="entries">
+      
+          <div class="entry">
+              <a href='./gd/bcsc.html'>
+              <div class="overlay"><span>bcsc</span></div>
+              <img src='./assets/gd/reception_poster.png' />
+              </a>
           </div>
-        </div>
-      </div>
-    </div>
+          
+          <div class="entry">
+              <a href='/gd/wcn'>
+              <div class="overlay"><span>warming cooling neutral</span></div>
+              <img src='./assets/gd/warm_neut_cool_final.png' />
+              </a>
+          </div> 
 
-  </body>
+          <div class="entry">
+              <a href='./3d/egg.html'>
+              <div class="overlay"><span>egg energy</span></div>
+              <img src='./assets/3d/table.jpg' />
+              </a>
+          </div> 
+
+      </div>
+
+      </div>
+
+
+    </body>
 
 
   </html>
