@@ -53,7 +53,7 @@ h2 {
 }
 
 .sidebar {
-  width: 310px; 
+  width: 250px; 
   font-size: 18px;
   height: 100%;
   position: fixed;
@@ -70,7 +70,7 @@ h2 {
 
 .entries {
   width: 70%;
-  margin-left: 350px;
+  margin-left: 320px;
   margin-top: -30px;
   display: flex;
   flex-wrap: wrap;

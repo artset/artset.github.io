@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+  <html>
+
+    <head>
+      <title> Katherine Sang </title>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="../styles/layout.css">
+      <link rel="stylesheet" type="text/css" href="../styles/content-post.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+      <script type="text/javascript" src="index.js" async></script>
+      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    </head>
+
+    <body>
+      <div class="header">
+        <h2><a href="../index.html">my work.</a></h2>
+        <a href="/about.html"> about</a>
+      </div>
+
+      <div class="content">
+        <div class="sidebar">
+            <h3>happy sad <br> sleepy mad</h3>
+
+            <div class="capt">
+              Jan 2019 - May 2019, Data Science <br>
+              <p class="whisper">
+                Twitter API, SQL, Python, d3.js, Illustrator, InDesign. 
+
+              </p>
+              
+            
+            </div>
+      
+        </div>
+
+        <div class="entries">
+          
+          <div class="content-post">
+              <div class="main"> <img src='../assets/code/hssm_large.png' /> </div>
+              <p>
+                  I worked with 3 other peers, Minna, Maggie, and Iris, to explore the usage of emojis across different languages. It was a relatively casual, free flowing exploration to see the different nuances of how different languages used emojis through sentiment analysis and the linguistic context of the emojis. 
+               </p>
+
+               <p>
+                  Gathering our data from Twitter, we scraped over 250,000 tweets over the course of two months. For sentiment analysis, we used BlobText. 
+                  Then, we applied the kmeans algorithm to create clustering for each of the words. The findings of the kmeans algorithm wasn't very useful because BlobText classified a majority of our tweets as neutral. 
+                  
+                  Thus, we switched to a different approach — context of words. Then, we used an algorithm similar to Word2Vec in order to calculate the cosine distance from the word to the emoji. We found some interesting nuances, such as Japan's sad emoji had some positive words, such as beautiful, and their tired emojis would relate to academia, which wasn't found in the other languages.  We also explored predicting the sentiment of a tweet given the emojis in the tweet, using SVMs and decision trees.
+               </p>
+
+               <p>
+                  I had a lot of fun working with tons of data for the first time, and playfully working with the sets to do mathematical analysis. Not surprisingly, I was deeply invested in the data visualization and presentation of the poster, which was a ton of fun to design given the playful nature of our project. Additionally, our poster won best visualization in the class!
+               </p>
+
+               <a href="https://medium.com/@happysadsleepymad/final-blog-post-f92f24c3d6c5">Medium Article</a>
+                        
+          </div>
+        </div> 
+      </div>
+
+      </div>
+
+
+    </body>
+
+
+  </html>
