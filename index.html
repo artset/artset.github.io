@@ -11,6 +11,8 @@
   
   
   <script type="text/javascript" src="index.js" async></script>
+  <script type="text/javascript" src="filter.js" async></script>
+
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
   
 </head>
@@ -23,65 +25,66 @@
   
   <div class="content">
     <div class="sidebar">
-      <a href="#">code</a>
-      <a href="#">ui / ux</a>
-      <a href="#">illustration</a>
-      <a href="#">graphic design</a>
-      <a href="#">physical fabrication</a>
+        <a href="#" class="filter" id="all">all</a>
+      <a href="#" class="filter" id="code">code</a>
+      <a href="#" class="filter" id="ui">ui / ux</a>
+      <a href="#" class="filter" id="illo">illustration</a>
+      <a href="#" class="filter" id="gd">graphic design</a>
+      <a href="#" class="filter" id="3d">physical fabrication</a>
     </div>
     
     <div class="entries">
       
-      <div class="entry">
+      <div class="entry code ui">
         <a href='code/strateos.html'>
           <div class="overlay"><span>intern @ strateos</span></div>
           <img src='./assets/code/strateos.png' />
         </a>
       </div> 
       
-      <div class="entry">
+      <div class="entry code gd">
         <a href='code/wordfun.html'>
           <div class="overlay"><span>computational <br /> lit x art <br /> projects </span></div>
           <img src='./assets/code/lightweight3.png' />
         </a>
       </div> 
       
-      <div class="entry">
+      <div class="entry gd">
         <a href='./gd/freelance.html'>
           <div class="overlay"><span>freelance graphic deisgn</span></div>
           <img src='./assets/gd/bcsc_screenprinting.png' />
         </a>
       </div>
       
-      <div class="entry">
+      <div class="entry code">
         <a href='code/hssm.html'>
           <div class="overlay"><span>analyzing emoji <br /> usage across <br />different languages</span></div>
           <img src='./assets/code/hssm.png' />
         </a>
       </div> 
       
-      <div class="entry">
+      <div class="entry gd illo">
         <a href='gd/print.html'>
           <div class="overlay"><span>personal magazine</span></div>
           <img src='./assets/gd/zero-to1.png' />
         </a>
       </div> 
       
-      <div class="entry">
+      <div class="entry illo">
         <a href='illo/digital.html'>
           <div class="overlay"><span>digital art</span></div>
           <img src='./assets/gd/warm_neut_cool_final.png' />
         </a>
       </div> 
       
-      <div class="entry">
+      <div class="entry illo">
         <a href='illo/sketchbook.html'>
           <div class="overlay"><span>traditional art</span></div>
           <img src='./assets/illo/world.png' />
         </a>
       </div> 
       
-      <div class="entry">
+      <div class="entry 3d illo">
         <a href='3d/skybub.html'>
           <div class="overlay"><span>sky bub</span></div>
           <img src='./assets/3d/skybub.jpg' />
@@ -89,21 +92,21 @@
       </div>
       
       
-      <div class="entry">
+      <div class="entry 3d">
         <a href='3d/egg.html'>
           <div class="overlay"><span>egg energy</span></div>
           <img src='./assets/3d/table.jpg' />
         </a>
       </div> 
       
-      <div class="entry">
+      <div class="entry 3d">
         <a href='3d/fishlit.html'>
           <div class="overlay"><span>fishlit</span></div>
           <img src='./assets/3d/fishlit.jpg' />
         </a>
       </div> 
 
-      <div class="entry">
+      <div class="entry ui">
           <a href='ui/gaggle.html'>
             <div class="overlay"><span>gaggle</span></div>
             <img src='./assets/ui/gaggle/gaggle1.png' />
