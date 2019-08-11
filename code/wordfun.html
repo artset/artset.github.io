@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+  <html>
+
+    <head>
+      <title> Katherine Sang </title>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="../styles/layout.css">
+      <link rel="stylesheet" type="text/css" href="../styles/content-post.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+      <script type="text/javascript" src="index.js" async></script>
+      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    </head>
+
+    <body>
+      <div class="header">
+        <h2><a href="../index.html">my work.</a></h2>
+        <a href="/about.html"> about</a>
+      </div>
+
+      <div class="content">
+        <div class="sidebar">
+            <h3>light/weight</h3>
+
+            <div class="capt">
+              Jan 2019 - May 2019,  <br>
+              <p class="whisper">
+                Python, d3.js, Javascript, InDesign, Illustrator.
+
+              </p>
+              
+            
+            </div>
+      
+        </div>
+
+        <div class="entries">
+          
+          <div class="content-post">
+              <p>
+                  I created a collection of experimentation projects that involve  literature, visualization, and code. 
+                  There is a mix of web apps, such as a poetry generator and a fridge magnet space, and more physical works, such as zines.
+                  <a href="http://artset.github.io/wordfun/">See the entire collection.</a> Here, I will
+                  talk about light/weight, my most recent project.
+  
+                </p>
+              <div class="main"> <img src='../assets/code/lightweight.png' /> </div>
+              <p class="whisper"> Ft. Kurt Vonnegut's Sirens of Titan, translated into a bar graph.</p>
+          
+              <p>
+
+                For this project, I was contemplating the rhythm of sentences —  long sentences with polysyndetons and commas galore feel  fluid, yet short sentences are are abrupt. These long sentences, paradoxically, are light because of their fluidity. In contrast, short sentences are often used to portray heaviness. From this, I decided to do visualizations by translating weight into color.
+
+                I wrote a python script that used parameters such as sentence length, word length, stop word count, and adjective count to map to a number between 0 and 255 to translate to a color on the greyscale. Then, I transferred the data into json files to be automated by d3 into visualizations. Lastly, I put on my love of brutalism and graphic design to create the zine, translating these visualizations into a celebration of the text. I printed the zine and binded it myself.
+                You can see the work <a href="https://issuu.com/katherinesang/docs/lightweight">here</a>, along with  explanations behind each visualization.
+              </p>
+
+              <div class="pic-set">
+                  <img src='../assets/code/lightweight2.png' />
+                  <img src='../assets/code/lightweight3.png' />
+                  <img src='../assets/code/lightweight4.png' />
+              </div>
+
+              <p class="whisper">
+                Left to right:
+                1. Virginia Woolf's To the Lighthouse excerpt, mapping 60 sentences to color. 
+                2. Cover page 
+                3. After the python scripts were run and converted into json files, here are the resulting
+                pieces of data visualized in d3.
+              </p>
+          </div>
+        </div> 
+      </div>
+
+      </div>
+
+
+    </body>
+
+
+  </html>

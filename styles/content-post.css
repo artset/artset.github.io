@@ -3,9 +3,27 @@
   margin-bottom: 20px;
 }
 
+
+.content-post a {
+  padding-bottom: 4px;
+  border-bottom: 1px solid #dddddd;
+}
+
 .pic-set {
   display: flex;
   padding: 20px 0px 20px 0px;
+}
+
+.pic-set--main {
+  display: flex;
+  padding: 20px 0px 20px 0px;
+}
+
+
+.pic-set--main img {
+  height: 400px;
+  width: auto;
+  padding: 2px;
 }
 
 .pic-set img {
