@@ -9,9 +9,19 @@
 }
 .content-post a {
   padding-bottom: 4px;
-  border-bottom: 1px solid #dddddd;
+  -moz-box-shadow: inset 0 -1px 0px 0px #dddddd;
+  -webkit-box-shadow: inset 0 -1px 0px 0px #dddddd;
+  box-shadow: inset 0 -1px 0px 0px #dddddd;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
 }
 
+.content-post a:hover {
+  -moz-box-shadow: inset 0 -3px 0 0 #f9e369;
+  -webkit-box-shadow: inset 0 -3px 0 0 #f9e369;
+  box-shadow: inset 0 -3px 0 0 #f9e369;
+}
 .pic-set {
   display: flex;
   position: relative;
