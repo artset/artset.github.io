@@ -1,10 +1,12 @@
 .content-post .main img {
   width: 100%;
+  max-width: 900px;
   /* height: 500px; */
   margin-bottom: 20px;
 }
 
 .content-post {
+  max-width: 900px;
   padding: 5px;
   padding-top: 30px;
 }
