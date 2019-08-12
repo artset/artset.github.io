@@ -33,19 +33,19 @@
 
 .pic-set--main {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   width: 100%;
   padding: 20px 0px 20px 0px;
 }
 
 
 .pic-set--main img {
-  height: 400px;
+  height: 300px;
   padding: 2px;
 }
 
 .pic-set img {
-  height: 230px;
+  height: 180px;
   width: auto;
   padding: 2px;
 }
