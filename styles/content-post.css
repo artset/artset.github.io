@@ -6,6 +6,7 @@
 
 .content-post {
   padding: 5px;
+  padding-top: 30px;
 }
 .content-post a {
   padding-bottom: 4px;
@@ -50,7 +51,7 @@
 }
 
 .sidebar h3 {
-  font-family: 'acumin pro wide', sans-serif;
+  font-family: acumin-pro-wide, sans-serif;
 }
 .capt {
   line-height: 24px;

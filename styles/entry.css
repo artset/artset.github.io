@@ -1,22 +1,22 @@
 .entry {
   margin: 30px;
-  height: 350px;
+  height: 300px;
   position: relative;
   position: relative;
 }
 
 .entry img{
-  height: 350px;
+  height: 300px;
 }
 
 .entry .overlay {
-  font-family: 'acumin pro wide', sans-serif;
+  font-family: acumin-pro-wide, sans-serif;
   font-weight: 700;
   font-size: 35px;
   background:#fff;
   color: #fff;
   position: absolute;
-  height: 350px;
+  height: 300px;
   width: 100%;
   opacity: 0;
   top: 0;
