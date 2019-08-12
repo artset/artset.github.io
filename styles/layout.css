@@ -50,9 +50,10 @@ h2 {
 .header {
   width: 100%;
   padding: 10px;
+  padding-top: 20px;
   padding-left: 100px;
   display: flex;
-  font-family: acumin-pro, sans-serif;
+  font-family: acumin-pro-wide, sans-serif;
   justify-content: flex-start;
   align-items: center;
   font-size: 30px;
