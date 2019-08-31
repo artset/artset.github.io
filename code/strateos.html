@@ -26,8 +26,8 @@
       <h3>Strateos</h3>
       
       <div class="capt">
-        Summer 2019, <br> Design + Engineering Intern
-        <p class="whisper"> React, Sketch, User Research. </p>
+        Summer 2019, <br> Design Engineer Intern
+        <p class="whisper"> React, Gatsby, GraphQL, Sketch.</p>
         
       </div>
       
@@ -36,7 +36,165 @@
     <div class="entries">
       
       <div class="content-post">
-        Work in progress. More information soon! 
+
+          <h4>Context</h4>
+        <p>
+        I had the privilege of working at Strateos as a Design Engineer intern in summer 2019. 
+        In this position, I was involved with web development, UI/UX design, and product design.
+        At the end of my internship, I presented projects of interest to the company, which you can find 
+        the slide deck for <a href="https://drive.google.com/file/d/1bihQADNuPcviENBMFLTVwDwsi1foaUhw/view?usp=sharing">here.</a>
+        </p>
+
+        <p>
+        Strateos is a biotech company that leverages robotics to automate run bio assays. When I arrived, the
+        company had recently gone through a merger and was rapidly expanding into a much larger
+        lab, along with new features to support automating chemistry.
+        </p>
+
+        <p> <b>Long story short:</b> In regarding to web development,
+          I designed the compound/inventory linking feature for the chemistry expansion. 
+          Additionally, I streamlined workflows for developers by rebuilding the Amino design system documentation site 
+          in Gatsby to automate component documentation. I also created a variety of components in Amino
+          for the chemistry section of the web app. Given the merger (new name! new logo! new colors! new type!), I was also responsible for creating 
+          backwards compatible code to shift various elements of the design system to align with the 
+          new branding guidelines. I did this work within the UI library in Sketch, along with the actual codebase in React.
+
+          Lastly, I had done 
+          a ton of fun side projects, such as being involved in the rebranding process and creating assets
+          such as business cards and social media banners.
+        </p>
+
+        <p> Now, I'll go in detail of two independent projects that I had worked on for the web app and the 
+          design system, then just show extra fun assets! :)
+        </p>
+
+
+        <h4>UI/UX: Compound/Inventory Linking</h4>
+
+        <p>
+          Due to a partnership with Eli Lily and a new lab in the works, the Strateos product
+          was expanding to support automating
+          compound synthesis. There had already existed an inventory section to keep track
+          of assays. Given the new feature of compound synthesis,
+          we needed a way to keep track of which compounds were in which containers. 
+          This is where compound/inventory linking comes in!
+        </p>
+
+        <p> I conducted in depth interviews with application scientists, chemists,
+          and internal Strateos employees in the new labs that would interact with this feature.
+          <br> <br>
+          I identified two users that would require slightly different experiences:
+          <Br> <b>Internal users</b>: Chemists and operations at the new lab would need to create this link.
+            The link would tend to come in the form of a CSV and handle hundreds of vials. Thus,
+            manual support would be too laborious.
+          <br> <b>External users</b>: Chemists at companies such as Eli Lily and Amgen work at a much smaller scale 
+          to create these links, thus manual linking would be sufficient.
+        </p>
+
+        <p> Next, I did research to find out where in the existing web app would users go to to create
+          this link -- compound or inventory?
+        </p>
+
+        <i>"Chemists are always thinking about the compound, so they would go to the compound page."</i> (User findings)
+
+        <br> <br>
+
+        <div class="whisper">
+            Note: The UI/UX section of this page will  not have high res walk throughs of all the mocks,
+            but they are featured on the slide deck for those who are interested.
+          </div>
+
+        <div class="main"><img src="../assets/strateos/userflow.jpg" /></div>
+        <div class="whisper">Based on the mentality of a chemist, I realized that the feature
+          must start at the compound page. I identified three contexts in which users would interact with this feature, then mapped
+            out a user diagram where my mocks would be based off of. </div>
+
+            <div class="pic-set">
+                <img src="../assets/strateos/lowfi1.jpg" />
+                <img src="../assets/strateos/lowfi2.jpg" />
+                <img src="../assets/strateos/lowfi3.jpg" />
+              </div>
+
+        <p>Here are quick snapshots of my high fidelity work.</p>
+        <div class="main"><img src="../assets/strateos/manual_flow.png" /></div>
+        <div class="whisper">An overview of the manual flow high fidelity mock. </div>
+  
+        <p>
+          In regards to bulk tagging, I interviewed internal members to understand their workflow with the CSV
+          and created a CSV template and flow to create this experience. Given that CSV uploads can result in 
+          numerous errors, I examined all the use cases and created error handling designs that would
+          prompt the user to various actions to resolve the error.
+        </p>
+
+        <div class="main"><img src="../assets/strateos/bulk_flow.png" /></div>
+        <div class="whisper">An overview of the bulk flow high fidelity mock. </div>
+
+        <div class="main"><img src="../assets/strateos/inventory_creation_flow.png" /></div>
+        <div class="whisper">An overview of the  inventory creation flow.</div>
+
+        Lastly, I had done redesigns of the compound and inventory pages to display the results of these linkings.
+        <a href="https://drive.google.com/file/d/1JmTpVaXVizebhiUeCgasdMqC3pwVoEni/view?usp=sharing">Here is the video demo.</a>
+        <br> <br>
+
+        <p>Working on this project was an incredible experience because I was able to design a feature
+          that is relevant to the next steps of the product. Additionally, given
+          my lack of background in the life sciences, I found it crucial to make the most out of user research
+          in order to shape the solution. Currently, these mocks are handed off to engineering for development.
+
+        </p>
+
+        <h4>Amino Documentation Website: Gatsby Migration</h4>
+
+        <p>Amino is the design system that all of the Strateos products consume. This project largely
+          focused on streamlining the workflow for developers, while giving the users of Amino
+          an accessible and reliable way to understand Amino. You can view my final project
+        <a href="https://amino.transcriptic.com/">here.</a> </p>
+
+
+        <p><b> Problem: </b> The documentation site, a separate codebase from Amino, is finnicky to update.
+          Given how quickly Amino was expanding to supply molecular drawers/renders, along with other 
+          components, documentation was an overwhelming task for the developer.</p>
+
+        <div class="main"><img src="../assets/strateos/gatsby_direction.png" /></div>
+
+        <p><b> Solution: </b> I used Gatsby, a static site generator, to build the app. Gatsby is useful since 
+          it can query data to transform into templates. I used GraphQL to transform 
+          component data into <a href="https://amino.transcriptic.com/components/button">a usage page, an interactive component demo, and a props table. </a>
+          I added a markdown feature in the Amino to function
+          as a place where additional comments on component usage could be queried. There is a filter
+          such that only components with markdown pages can be viewed on the website, because
+          this means that the design process for these components have been deeply thought through.
+          
+          I integrated this into the documentation for releasing new versions of Amino, such that the website
+          will be rebuilt and deployed whenever large feature changes are made to Amino.
+        </p>
+
+        <div class="main"><img src="../assets/strateos/amino.png" /></div>
+        <div class="whisper">Here's a screenshot of the landing page! But why look at this 
+          when you can just <a href="https://amino.transcriptic.com/">check out the project?</a>
+        </div>
+
+        <h4>Fun design things </h4>
+
+        <div class="pic-set">
+          <img src="../assets/strateos/business6.png" />
+          <img src="../assets/strateos/business2.png" />
+          <img src="../assets/strateos/business.png" />
+          <img src="../assets/strateos/business3.png" />
+          <img src="../assets/strateos/business4.png" />
+          <img src="../assets/strateos/business5.png" />
+        </div>
+
+        <div class="whisper">Various business card designs! The managers ultimately chose the bottom one.</div>
+
+        <h4>Final thoughts</h4>
+
+        <p> I had an amazing time working at Strateos this summer. In addition to allowing me to dive 
+          into building UI that was highly relevant to the product and work with numerous codebases,
+          I had an amazing mentor who helped shape this wonderful experience. I learned a ton about
+          maintaining and building high quality products, as well as getting involved with
+          rigorous user research. Thanks for reading! :)
+        </p>
 
       </div>
     </div> 

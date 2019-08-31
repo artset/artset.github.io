@@ -47,6 +47,19 @@ h2 {
   width: 365px;
 }
 
+h3 {
+  font-family: acumin-pro-wide, sans-serif;
+}
+
+h4 {
+  font-family: acumin-pro-wide, sans-serif;
+  color: #444444;
+  font-size: 20px;
+  border-left: 5px solid #f9e369;
+  padding-bottom: 4px;
+  padding-left: 10px;
+}
+
 .header {
   width: 100%;
   padding: 10px;
@@ -107,6 +120,7 @@ h2 {
 .whisper {
   color: #888888;
   font-size: 12px;
+  padding-bottom: 15px;
 }
 
 .credit {
