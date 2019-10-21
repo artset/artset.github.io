@@ -153,22 +153,22 @@ h4 {
 } */
 .filter {
   padding-bottom: 4px;
-  -moz-box-shadow: inset 0 0px 0px 0px #2a73ff;
-  -webkit-box-shadow: inset 0 0px 0px 0px #2a73ff;
-  box-shadow: inset 0 0px 0px 0px #2a73ff;
+  -moz-box-shadow: inset 0px 0px 0px  0px #2a73ff;
+  -webkit-box-shadow: inset 0px 0px 0px  0px  #2a73ff;
+  box-shadow: inset 0px 0px 0px  0px #2a73ff;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   transition: 0.5s;
 }
 
 .filter:hover {
-  -moz-box-shadow: inset 10px 0px 0 0 #f9e369;
-  -webkit-box-shadow: inset 10px 0px 0 0 #f9e369;
-  box-shadow: inset -20px 0px 0px 0px #f9e369;
+  -moz-box-shadow: inset 10px 0px 0px  0.01px #f9e369;
+  -webkit-box-shadow: inset 10px 0px 0px  0.01px #f9e369;
+  box-shadow: inset -20px 0px 0px  0.01px #f9e369;
 }
 
 .filter.active {
-  -moz-box-shadow: inset 10px 0px 0 0 #f9e369;
-  -webkit-box-shadow: inset 10px 0px 0 0 #f9e369;
+  -moz-box-shadow: inset 10px 0px 0px 0px #f9e369;
+  -webkit-box-shadow: inset 10px 0px 0px 0px #f9e369;
   box-shadow: inset 20px 0px 0px 0px #f9e369;
 }
