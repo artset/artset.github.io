@@ -147,15 +147,11 @@ h4 {
   right: 30px;
 }
 
-
-/* .filter {
-  background: red;
-} */
 .filter {
   padding-bottom: 4px;
-  -moz-box-shadow: inset 0px 0px 0px  0px #2a73ff;
-  -webkit-box-shadow: inset 0px 0px 0px  0px  #2a73ff;
-  box-shadow: inset 0px 0px 0px  0px #2a73ff;
+  -moz-box-shadow: inset 0px 0px 0px  0.01px #2a73ff;
+  -webkit-box-shadow: inset 0px 0px 0px  0.01px  #2a73ff;
+  box-shadow: inset 0px 0px 0px  0.01px #2a73ff;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   transition: 0.5s;
