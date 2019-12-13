@@ -59,6 +59,7 @@ h4 {
   border-left: 5px solid #f9e369;
   padding-bottom: 4px;
   padding-left: 10px;
+  display: inline-block;
 }
 
 .header {
@@ -86,7 +87,7 @@ h4 {
 
 .content {
   width: 100%;
-  padding: 40px 100px 100px 100px;
+  padding: 60px 100px 100px 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;

@@ -1,10 +1,13 @@
 .entry {
-  margin: 30px;
+  margin: 25px;
   height: 300px;
   position: relative;
   position: relative;
 }
 
+.entry--border img {
+    border: 1px solid #dddddd;
+}
 .entry img{
   height: 300px;
 }

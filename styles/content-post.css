@@ -25,6 +25,10 @@
   -webkit-box-shadow: inset 0 -3px 0 0 #f9e369;
   box-shadow: inset 0 -3px 0 0 #f9e369;
 }
+
+.content-post .main--border img {
+    border: 1px solid #dddddd;
+}
 .pic-set {
   display: flex;
   position: relative;
@@ -40,9 +44,24 @@
   padding: 20px 0px 20px 0px;
 }
 
+.side_pic img {
+    max-width: 300px;
+    margin: 10px 20px 20px 0px;
+}
 
+.side_pic--left {
+    float: left;
+}
+
+.side_pic--right {
+    float: right;
+}
+
+.side_pic--border img {
+    border: 1px solid #dddddd;
+}
 .pic-set--main img {
-  height: 300px;
+  width: 200px;
   padding: 2px;
 }
 

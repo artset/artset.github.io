@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Katherine Sang </title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../styles/layout.css">
+  <link rel="stylesheet" type="text/css" href="../styles/content-post.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  
+  <script type="text/javascript" src="index.js" async></script>
+  <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon" />
+  
+</head>
+
+<body>
+  <div class="header">
+    <h2><a href="../index.html">my work.</a></h2>
+    <a href="../about.html"> about</a>
+  </div>
+  
+  <div class="content">
+    <div class="sidebar">
+      <h3>Goodreads Redesign</h3>
+      
+      <div class="capt">
+        Autumn 2019
+        <p class="whisper"> HTML, CSS, jQuery, Figma </p>
+        
+      </div>
+      
+    </div>
+    
+    <div class="entries">
+      
+      <div class="content-post">
+          <h4>Introduction</h4>
+
+          <p>
+            Goodreads is a social media platform where users can review books and connect with readers. While 
+            Goodreads is exciting for an avid reader like me, the UI is overwhelming to navigate. Processes such as sorting and tagging take too many clicks and content is disorganized. Through my redesign, I streamlined the experience so users can focus on book discovery and community.
+          </p>
+          
+          <h4> Process</h4>
+          <p>
+            First, I identified the pain points of the interface. The general weakness of Goodreads is that it struggles to find a structural way to display all of its information. For instance, the reader profile and book profile pages are lengthy and unstructured; the user has no way to navigate to a subtopic without considerable searching/ scrolling. Additionally, the dashboard is quite cluttered, offering no sense of direction of where the user should look. The Goodreads mobile version is even more lacking, completely eliminating information from the desktop layout.
+
+            As a result, I decided to create a responsive redesign of the Goodread, striving to create a visual hierarchy that would make sense for the reader. 
+                
+          </p>
+
+          <div class="main">
+              <img src="../assets/ui/goodreads/goodreads_dashboard_og.png" />
+          </div>
+          <p class="whisper">
+              Here is the original goodreads design. Left is the dashboard, which I decided to redesign. Notice how the left and right are visually fighting for the user"s eye. As the user scrolls, the left sidebar has a few more elements of content that are unrelated.
+          </p>
+
+          <h4> Low Fidelity Mock-ups</h4>
+
+          <div class="main">
+              <img src="../assets/ui/goodreads/navigation_dash.png">
+          </div>
+
+          <p class="whisper">First, I decided to split up the Goodreads dashboard into three parts -- focusing on catching up the user to its newsfeed, a discovery tab, and current events in the book community.</p>
+
+          <div class="side_pic side_pic--left side_pic--border">
+            <img src="../assets/ui/goodreads/palette.png" /> 
+          </div>
+
+          <h4>High Fidelity Mock-ups</h4>
+          <p>
+            After reviewing my low fidelity mock-ups, I implemented the Goodreads dashboard in high fidelity. The header is easier to navigate due to the streamlined design, with no repeating links under the user profile and community. By setting consistent and clear typographic elements (intentional choices of serif vs sans serif, bold, italics, color, size), the site becomes easy to navigate. I employed a consistent color palette that associates interaction with greens, link accents with warm browns, and grayscale for borders/footers/information hierarchy. Lastly, I refactored the information from the original dashboard into 3 subsections, which improves navigation flow by letting the user easily find the information without being overwhelmed with a text-heavy page.
+          </p>
+
+          <div class="main">
+              <img src="../assets/ui/goodreads/desktop.jpg"/>
+          </div>
+
+          <h4>Implementation</h4>
+          <p>
+            Lastly, you can find my responsive implementation of the Goodreads website <a href="/goodreads">here</a>. .(I slipped a few book recommendations in the demo, so I encourage you to check that out!). This redesign was a part of a larger redesign where I redesigned other pages of Goodreads. You can read further on my thought process <a href="../assets/ui/goodreads/goodreads_overview.pdf">here</a>. Given that I had created low fidelity mocks for other pages, it would be fun to implement those in high fidelity in the future.
+            </a>
+          </p>
+
+      </div>
+    </div> 
+  </div>
+  
+</div>
+
+<div class="credit">
+    © Katherine Sang, 2020
+</div>
+
+
+</body>
+
+
+</html>
