@@ -1,77 +1,120 @@
 <!DOCTYPE html>
-  <html>
+<html>
 
-    <head>
-      <title> Katherine Sang </title>
+<head>
+    <title> Katherine Sang </title>
 
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <link rel="stylesheet" type="text/css" href="../styles/layout.css">
-      <link rel="stylesheet" type="text/css" href="../styles/content-post.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../styles/layout.css">
+    <link rel="stylesheet" type="text/css" href="../styles/content-post.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
-      <script type="text/javascript" src="index.js" async></script>
-      <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon" />
+    <script type="text/javascript" src="index.js" async></script>
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon" />
 
-    </head>
+</head>
 
-    <body>
-      <div class="header">
+<body>
+    <div class="header">
         <h2><a href="../index.html">my work.</a></h2>
         <a href="../about.html"> about</a>
-      </div>
+    </div>
 
-      <div class="content">
+    <div class="content">
         <div class="sidebar">
             <h3>happy sad <br> sleepy mad</h3>
 
             <div class="capt">
-              Jan 2019 - May 2019<br>
-              <p class="whisper">
-                Twitter API, SQL, Python, d3.js, Illustrator, InDesign. 
+                Jan 2019 - May 2019<br>
+                <p class="whisper">
+                    Twitter API, SQL, Python, d3.js, Illustrator, InDesign.
 
-              </p>
-              
-            
+                </p>
+
+
             </div>
-      
+
         </div>
 
         <div class="entries">
-          
-          <div class="content-post">
-              <div class="main"> <img src='../assets/code/hssm_large.png' /> </div>
 
-              <h4>Context</h4>
-              <p>
-                  I worked with 3 other peers, Minna, Maggie, and Iris, to explore the usage of emojis across different languages. 
-                  It was a free flowing exploration to see the nuances of 
-                  how different languages used emojis through sentiment analysis and context.
-              </p>
+            <div class="content-post">
 
-              <h4>Process</h4>
-              <p>
-                  Gathering our data from Twitter, we scraped over 250,000 tweets over the course of two months. For sentiment analysis, we used BlobText. 
-                  Then, we applied the kmeans algorithm to create clustering for each of the words. The findings of the kmeans algorithm wasn't very useful because BlobText classified a majority of our tweets as neutral. 
-                  
-                  Thus, we switched to a different approach — context of words. Then, we used an algorithm similar to Word2Vec in order to calculate the cosine distance from the word to the emoji. We found some interesting nuances, such as Japan's sad emoji had some positive words, such as beautiful, and their tired emojis would relate to academia, which wasn't found in the other languages.  We also explored predicting the sentiment of a tweet given the emojis in the tweet, using SVMs and decision trees.
-              </p>
+                <h4>Context</h4>
+                <p>
+                    Emojis are an interesting phenomenon of language, given they are universally used throughout many
+                    languagse. Due to this aspect of emojis, I worked with 3 other peers, Minna, Maggie, and Iris, to
+                    explore the usage of emojis across different languages. This was a free flowing exploration to see
+                    the nuances of how different languages used emojis through sentiment analysis and context.
+                </p>
 
-              <h4>Reflection</h4>
-              <p>
-                I had a lot of fun working with tons of data for the first time, and playfully working with the sets to do mathematical analysis. Not surprisingly, I was deeply invested in the data visualization and presentation of the poster, which was a ton of fun to design given the playful nature of our project. Additionally, our poster won best visualization in the class!
-              </p>
+                <h4>Initial Explorations in Sentiment</h4>
 
-               <a href="https://medium.com/@happysadsleepymad/final-blog-post-f92f24c3d6c5">Read the details about the project!</a>
-                        
-          </div>
-        </div> 
-      </div>
+                <p>
+                    Gathering our data from Twitter, we scraped over 250,000 tweets over the course of two months. We
+                    queried the Twitter API for emojis of different categories, then placed the data in a SQL database.
+                    We were curious about sentiment analysis, so we used BlobText to classify the sentiment of each
+                    tweet as we queried Twitter. Then, we applied the kmeans algorithm to create clustering for each of
+                    the words. 
+                </p>
 
-      </div>
+                <div class="pic-set--main">
+                    <img src="../assets/code/sentiments.png" />
+                </div>
+                <p class="whisper">
+                    Our initial visualization in MatPlotlib, which we used to cluster our three emojis into three
+                    categories -- positive (red), neutral(yellow), and negative(blue), indicated by the color in the
+                    bottom right. We had a lot of difficulties rendering the emojis in their full glory in MatPlotlib,
+                    which led us to use d3 in our later visualizations.
+                </p>
+
+                <div class="pic-set--main">
+                    <img src="../assets/code/happy_sad_sleepy_mad.png" />
+                </div>
+
+                <p class="whisper">
+                    As seen from these visualizatons to the right, the BlobText API classified most tweets as neutral. We decided that the information that BlobText gave us was not particularly useful. As a result, we decided to pivot our focus to the specific context these emojis were used, rather than just sentiment.
+                </p>
+
+                <h3>Context Vectors</h3>
+                <p>
+                    We implemented an algorithm that mapped each word to its sparse word vector, then calculated the cosine distance from emojis to each word. We chose four fairly popular emojis (happy, sad, sleepy, mad) and the top used languages (English, Japanese, Spanish) in our database. We found some
+                    interesting nuances, such as Japan's sad emoji had some positive words, such as beautiful, and their
+                    tired emojis would relate to academia, which wasn't found in the other languages. We also explored
+                    predicting the sentiment of a tweet given the emojis in the tweet, using SVMs and decision trees.
+                </p>
+
+                <div class="pic-set--main">
+                    <img src="../assets/code/happy.PNG" />
+                    <img src="../assets/code/sad.PNG" />
+                    <img src="../assets/code/sleepy.PNG" />
+                    <img src="../assets/code/mad.PNG" />
+                </div>
+
+                <div class="side_pic">
+                    <img src="../assets/code/hssm_legend.png" style="height:70px" />
+                </div>
 
 
-    </body>
+                <h4>Reflection</h4>
+                <p>
+                    To put all our work together, Minna and I created the poster for the project. This poster includes other fun visualizations that I didn't mention here. Developing these visualizations sparked a personal interest for me, which inspires to do more data visualization in the future. Additionally, our poster won best visualization in the class!
+                </p>
+
+                <div class="main"> <img src='../assets/code/hssm_large.png' /> </div>
+
+                <a href="https://medium.com/@happysadsleepymad/final-blog-post-f92f24c3d6c5">Read our Medium post about the project!</a>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
 
 
-  </html>
+</body>
+
+
+</html>

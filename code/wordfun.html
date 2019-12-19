@@ -23,7 +23,7 @@
 
       <div class="content">
         <div class="sidebar">
-            <h3>code x lit  <br /> projects</h3>
+            <h3>wordfun</h3>
 
             <div class="capt">
               Jan 2019 - May 2019,  <br>
@@ -42,7 +42,7 @@
           <div class="content-post">
               <p>
                   I created a collection of explorational projects that involve literature, visualization, and code. 
-                  There is a mix of web apps, such as a poetry generator and a fridge magnet space, and more physical works, such as zines. I learned HTML/CSS, learning how to work with APIs such as riTA.js and libraries such as p3, jquery, and d3, through these projects. On this page, I will give an overview of two of the projects in the collection. You can see the rest of them 
+                  There is a mix of web apps, such as a poetry generator and a fridge magnet space, and more physical works, such as zines. I learned HTML/CSS and worked with APIs such as riTA.js and datamuse and libraries such as p3, jquery, and d3. On this page, I will give an overview of two of the projects in the collection. You can see the rest of them 
                   <a href="http://artset.github.io/wordfun/">here.</a>
   
                 </p>
@@ -52,11 +52,10 @@
               <p class="whisper"> Ft. Kurt Vonnegut's Sirens of Titan, translated into a bar graph.</p>
           
               <p>
-
                 For this project, I was contemplating the rhythm of sentences —  long sentences with polysyndetons and commas galore feel  fluid, yet short sentences are are abrupt. These long sentences, paradoxically, are light because of their fluidity. In contrast, short sentences are often used to portray heaviness. From this, I decided to do visualizations by translating weight into color.
               </p>
               <p>
-                I wrote a python script that used parameters such as sentence length, word length, stop word count, and adjective count to map to a number between 0 and 255 to translate to a color on the greyscale. Then, I transferred the data into json files to be automated by d3 into visualizations. Lastly, I put on my love of brutalism and graphic design to create the zine, translating these visualizations into a celebration of the text. I printed the zine and binded it myself.
+                I wrote a python script that used parameters such as sentence length, word length, stop word count, and adjective count to map to a number between 0 and 255 to translate to a color on the greyscale. Then, I transformed the data into json files to be automated by d3 into visualizations. Lastly, I put on my love of brutalism and graphic design to create the zine, translating these visualizations into a celebration of the text. I printed the zine and binded it myself.
                 You can see the work <a href="https://issuu.com/katherinesang/docs/lightweight">here</a>, along with  explanations behind each visualization.
               </p>
 
@@ -76,19 +75,14 @@
 
               <h4> Choose your type</h4>
 
-              <p> Markov chains are pretty good at generating textual gibberish, but I realize it elegantly brings out the light of a writer's voice. From this, I wanted to construct poetry that had a clear voice, in spite of being devoid of meaning (and when it generates something with meaning -- that is a beautiful accident in itself!). Additionally, there is a very visual element of the voice of a writer. Thus, I wanted to translate the voice, in some form, to something visual. Type seemed to be a viable option. There is something about an old serif that echoes Bronte or some of my favorite french writers, the cleanliness of Murakami's glassy tone echoes a modern sans serif, etc. From these thoughts, I sought to create a poetry generator where the distinctions in tone and color could be emphasized by the physical display of the poetry. Hence, choose your type!</p>
+              <p> Markov chains are pretty good at generating textual gibberish, but I realize it elegantly preserves a writer's voice. Additionally, there is a very visual element of the voice of a writer. Thus, I wanted to translate the voice, in some form, to something visual. Type seemed to be a viable option. There is something about an old serif that echoes Bronte or some of my favorite french writers, the cleanliness of Murakami's glassy tone echoes a modern sans serif, etc. From these thoughts, I sought to create a poetry generator where the distinctions in tone and color could be emphasized by the physical display of the poetry. Hence, choose your type!</p>
 
               <p>
-                I used the <a href="https://rednoise.org/rita/">riTa library</a> to generate author bios and sentences from the inputted text. The riTa grammar part is pretty straight forward, it was something fun that I just wanted to do to get used to the library at first. The author bios follow a strict syntax. For the content, I took inspiration from the characters/themes/objects in the texts that I retrieved them from, such as the water bottle heir in Lauren Groff's Fates and Furies, or the Brahms symphonies that are mentioned in numerous Murakami novels.
+                I used the <a href="https://rednoise.org/rita/">riTa library</a> to generate author bios and sentences from the inputted text. For the content, I took inspiration from the characters/themes/objects in the texts that I retrieved them from, such as the water bottle heir in Lauren Groff's Fates and Furies, or the Brahms symphonies that are mentioned in numerous Murakami novels.
               </p>
 
               <p>
-                After the grammar, I decided to web scrape the New Yorker to get pure text files  of some of the stories I was interested in using. I used Beautiful Soup and wrote a python script to automate this.
-                </p>
-            
-                <p>
-                
-                After, I piped the resulting textfiles through the riTa Markov generator library. I produce the titles using parts of the produced poem and the Datamuse API for additional alterations. For line break, I create enjambment for the inconsolata and raleway typefaces by increasing the probability of line breaks in the midst of phrases (such as after adjectives). For the crimson text and playfair display, I take a more rhythmic/conventional approach that appears to be more fluid, inspired by by older, romantic poetry, concentrating the line breaks around natural pauses in the sentences. 
+                After I established author bios, I scraped the New Yorker, using BeautifulSoup, to get pure text files of the stories. Then, I piped the resulting textfiles through the riTa Markov generator library. I produce the titles using parts of the produced poem and the Datamuse API for additional alterations. For line break, I create enjambment for the inconsolata and raleway typefaces by increasing the probability of line breaks in the midst of phrases (such as after adjectives). For the crimson text and playfair display, I take a more rhythmic/conventional approach that appears to be more fluid, inspired by by older, romantic poetry, concentrating the line breaks around natural pauses in the sentences. 
             </p>
 
             <p> Here are some select poems that were generated from the text! You can give it a try <a href="https://artset.github.io/wordfun/type/">here.</a> Try to guess the source text (: </p>
@@ -99,6 +93,8 @@
                   <img src='../assets/code/poetry3.png' />
                   <img src='../assets/code/poetry4.png' />
               </div>
+            
+              For the future, I would like to make the load time a bit better on the poetry generator -- the lag is mostly due to the fact that riTA takes in an entire text corpus each time the text is generated (rip). Otherwise, this project was super fun to work with.
           </div>
         </div> 
       </div>

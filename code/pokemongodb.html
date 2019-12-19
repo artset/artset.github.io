@@ -1,97 +1,124 @@
 <!DOCTYPE html>
-  <html>
+<html>
 
-    <head>
-      <title> Katherine Sang </title>
+<head>
+    <title> Katherine Sang </title>
 
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <link rel="stylesheet" type="text/css" href="../styles/layout.css">
-      <link rel="stylesheet" type="text/css" href="../styles/content-post.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../styles/layout.css">
+    <link rel="stylesheet" type="text/css" href="../styles/content-post.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
-      <script type="text/javascript" src="index.js" async></script>
-      <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon" />
+    <script type="text/javascript" src="index.js" async></script>
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon" />
 
-    </head>
+</head>
 
-    <body>
-      <div class="header">
+<body>
+    <div class="header">
         <h2><a href="../index.html">my work.</a></h2>
         <a href="../about.html"> about</a>
-      </div>
+    </div>
 
-      <div class="content">
+    <div class="content">
         <div class="sidebar">
             <h3>PokemonGo Filter</h3>
 
             <div class="capt">
-              Autumn 2019<br>
-              <p class="whisper">
-                React, Python
-              </p>
-              
-            
+                Autumn 2019<br>
+                <p class="whisper">
+                    React, Python
+                </p>
+
+
             </div>
-      
+
         </div>
 
         <div class="entries">
-          
-          <div class="content-post">
 
-            <a href="http://www.juliewang.me/PokeMongoDB/">Demo</a> <br /> <br />
+            <div class="content-post">
 
-              <h4>Context</h4>
-              <p>
-                PokemonGo is a VR mobile game where users can walk around the real world and encounter Pokemon. Pokemon can be found in a variety of ways, from catching to hatching eggs, to raid events. Additionally, special Pokemon, such as the the elusive Ditto, can only be found disguised as other Pokemon. Given that these events cycle every few weeks, active players of the game must scour the internet (cough, Reddit) to find out if their favorite Pokemon is available in a raid, or what Pokemon are available in the egg pool. In other words, there is no place where all the information is in one place.
-              </p>
+                <a href="http://www.juliewang.me/PokeMongoDB/">Demo</a> <br /> <br />
 
-              <p>
-                To solve this issue, my friend <a href="http://www.juliewang.me/">Julie</a> and I developed a web app where users can filter Pokemon by type, as well as specific categories relevant to events. We built this web app specifically for users of the game, who can easily access the most commonly requested information, such as type and egg pool.
-              </p>
+                <h4>Context</h4>
+                <p>
+                    PokemonGo is a VR mobile game where users can walk around the real world and encounter Pokemon.
+                    Pokemon can be found in a variety of ways, from catching to hatching eggs, to raid events.
+                    Additionally, special Pokemon, such as the the elusive Ditto, can only be found disguised as other
+                    Pokemon. Given that these events cycle every few weeks, active players of the game must scour the
+                    internet (cough, Reddit) to find out if their favorite Pokemon is available in a raid, or what
+                    Pokemon are available in the egg pool. In other words, there is no place where all the information
+                    is in one place.
+                </p>
 
-              <div class="main main--border"> <img src='../assets/code/pokemongo_main.png' /> </div>
+                <p>
+                    To solve this issue, my friend <a href="http://www.juliewang.me/">Julie</a> and I developed a web
+                    app where users can filter Pokemon by type, as well as specific categories relevant to events. We
+                    built this web app specifically for users of the game, who can easily access the most commonly
+                    requested information, such as type and egg pool.
+                </p>
 
-              <div class="whisper"><a href="http://www.juliewang.me/PokeMongoDB/">View the demo!</a></div>
+                <div class="main main--border"> <img src='../assets/code/pokemongo_main.png' /> </div>
 
+                <div class="whisper"><a href="http://www.juliewang.me/PokeMongoDB/">View the demo!</a></div>
 
+                <h4>Process</h4>
+                <p>
+                    For this project, I scraped Pokemon names, dex names, and images from <a
+                        href="https://thesilphroad.com/">TheSilphRoad</a> and types from <a
+                        href="https://pokemondb.net/pokedex/all">PokemonDB</a>. Julie acquired the data for raids and
+                    ditto from <a href="https://leekduck.com/">LeekDuck</a>. I was responsible for implementing the card
+                    design, accordion menus, and the favorite feature. We collaborated on the filter logic, usability
+                    principles, as well as core visual components of the page, such as typeface and color.
+                </p>
 
-              <h4>Process</h4>
-              <p>
-                For this project, I scraped Pokemon names, dex names, and images from <a href="https://thesilphroad.com/">TheSilphRoad</a> and types from <a href="https://pokemondb.net/pokedex/all">PokemonDB</a>. Julie acquired the data for raids and ditto from <a href="https://leekduck.com/">LeekDuck</a>. I was responsible for implementing the card design, accordion menus, and the favorite feature. We collaborated on the filter logic, usability principles, as well as core visual components of the page, such as typeface and color.
-            </p>
+                <div class="side_pic side_pic--left side_pic--border">
+                    <img src='../assets/code/pokemongo_sidebar.png' />
+                    <p class="whisper">Fully expanded accordion sidebar. (Protip: hover over the <br> type filters in
+                        order to see a smile from CSS land!)</p>
+                </div>
+                <br>
+                <h4>Usability Principles</h4>
+                <p>
+                    We used different UI components, such as drop down vs a minimalized version of a checkbox, to convey
+                    different purposes. In the case of “ascending/descending”, only one choice is possible, which led us
+                    to choose to use a dropdown box for this feature, since the dropdown only shows the option selected.
+                </p>
 
-              <div class="side_pic side_pic--left side_pic--border">
-                  <img src='../assets/code/pokemongo_sidebar.png' /> 
-                <p class="whisper">Fully expanded accordion sidebar. (Protip: hover over the <br> type filters in order to see a smile from CSS land!)</p>
+                <p>
+                    For filtering through types (electric, water, etc), we emulated the logic of how multiple checkboxes
+                    can be selected with a more minimal UI. In our implementation, the background becomes grey when
+                    these filters are selected, giving visual feedback of the user’s action. Multiple buttons are
+                    allowed to be selected given the user can filter many types.
+                </p>
+
+                <p>
+                    Additionally, we incorporated an accordion style navigation so the user can easily sift through the
+                    filters they want to use. The accordion also serves to declutter the window, so the user can decide
+                    what information is important to them at the moment.
+                </p>
+
+                <h4> Conclusion</h4>
+                <p>
+                    This project was a joy to work on, given that I was able to use many skills to create a (semi)
+                    useful web page. However, there are a few issues that I would like to resolve. Currently, the web
+                    app is manually updated via json files, causing it to easily out of date. It would be great if there
+                    was a way to update the database easily, or if the information was crowd sourced. Additionally, the
+                    load time is fairly slow given that there are 600+ Pokemon that need to be rendered. For the future,
+                    I would like to add lazy load to solve this issue. Overall, I really loved working on this project
+                    and hope to dabble more with React!
+                </p>
             </div>
-            <br>
-            <h4>Usability Principles</h4>
-              <p>
-                We used different UI components, such as drop down vs a minimalized version of a checkbox, to convey different purposes. In the case of “ascending/descending”, only one choice is possible, which led us to choose to use a dropdown box for this feature, since the dropdown only shows the option selected.
-              </p>
-              
-              <p>
-                For filtering through types (electric, water, etc), we emulated the logic of how multiple checkboxes can be selected with a more minimal UI. In our implementation, the background becomes grey when these filters are selected, giving visual feedback of the user’s action. Multiple buttons are allowed to be selected given the user can filter many types.
-              </p>
+        </div>
+    </div>
 
-              <p>
-                Additionally, we incorporated an accordion style navigation so the user can easily sift through the filters they want to use. The accordion also serves to declutter the window, so the user can decide what information is important to them at the moment.
-              </p>
-
-            <h4> Conclusion</h4>
-              <p>
-                This project was a joy to work on, given that I was able to use many skills to create a (semi) useful web page. However, there are a few issues that I would like to resolve. Currently, the web app is manually updated via json files, causing it to easily out of date. It would be great if there was a way to update the database easily, or if the information was crowd sourced. Additionally, the load time is fairly slow given that there are 600+ Pokemon that need to be rendered. For the future, I would like to add lazy load to solve this issue. Overall, I really loved working on this project and hope to dabble more with React!
-              </p>
-          </div>
-        </div> 
-      </div>
-
-      </div>
+    </div>
 
 
-    </body>
+</body>
 
 
-  </html>
+</html>
