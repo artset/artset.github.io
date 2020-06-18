@@ -69,7 +69,11 @@
 .pic-set img {
   height: 180px;
   width: auto;
-  padding: 2px;
+  margin: 2px;
+}
+
+.pic-set--border img{
+    border: 1px solid #dddddd;
 }
 
 
