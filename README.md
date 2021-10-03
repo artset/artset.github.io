@@ -1,3 +1,5 @@
 # personal website
 
-i made things and they live here.
+[Check it out here](https://artset.github.io/)!
+
+Essentially, a glorified readme.
