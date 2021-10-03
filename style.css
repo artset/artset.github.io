@@ -1,0 +1,36 @@
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 35px;
+  font-size: 20px;
+  color: #464646;
+}
+
+.container {
+  width: 800px;
+  margin-top: 100px;
+  margin-left: 40px;
+}
+
+.title {
+  color: #09BC46;
+  font-family: 'Corben', cursive;
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+
+.links {
+  padding-top: 30px;
+  color: #09BC46;
+  font-family: 'Corben', cursive;
+  font-size: 20px;
+}
+
+.links a {
+  color: #09BC46;
+  display: inline-block;
+  padding: 0px 10px 0px 10px;
+}
+
+.links a:first-child {
+  padding: 0px 10px 0px 0px;
+}
